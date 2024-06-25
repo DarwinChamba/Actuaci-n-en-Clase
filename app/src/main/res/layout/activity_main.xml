@@ -28,18 +28,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su nombre"/>
     <EditText
+        android:id="@+id/apellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su apellido"/>
     <EditText
+        android:id="@+id/nota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su nota"/>
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ingresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ingresar"
