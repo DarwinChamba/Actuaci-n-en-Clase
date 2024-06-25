@@ -10,6 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Actuación en Clase"
@@ -24,18 +25,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su nombre"/>
     <EditText
+        android:id="@+id/apellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su apellido"/>
     <EditText
+        android:id="@+id/nota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese la Nota"/>
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="INGRESAR"
