@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.boton1.setOnClickListener {Toast.makeText(this,"Validado",Toast.LENGTH_SHORT).show()}
+        binding.boton1.setOnClickListener {Toast.makeText(this,"Validado",Toast.LENGTH_SHORT).show()
+        }
     }
 }

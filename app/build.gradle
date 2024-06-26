@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.actuacionclase'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.actuacionclase"
         minSdk 27
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -30,8 +30,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+<<<<<<< HEAD
     viewBinding {
         enable =true
+=======
+    viewBinding{
+        enabled true
+>>>>>>> 3e3b76f604aeb9cd26bc496b8b5770fdc80b2ba6
     }
 }
 
