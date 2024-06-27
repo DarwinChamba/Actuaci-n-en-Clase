@@ -13,7 +13,13 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.boton1.setOnClickListener {Toast.makeText(this,"Validado",Toast.LENGTH_SHORT).show()
+        binding.boton1.setOnClickListener {recuperarDatos()
         }
+    }
+
+    private fun recuperarDatos() {
+        val nombre=binding.nombre.text.toString()
+        val apellido=binding.apellido.text.toString()
+        val nota = binding.nota.text.toString()
     }
 }
