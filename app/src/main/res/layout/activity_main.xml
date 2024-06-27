@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginVertical="10dp"
     android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:background="#000"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,13 +18,14 @@
         android:layout_gravity="center"
         android:textSize="20sp"
         android:padding="10dp"
-        android:background="#6750A3"
-        android:textColor="@color/white"
+        android:background="#00BCD4"
+        android:textColor="#FFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/nombre"
         android:layout_width="match_parent"
@@ -38,7 +40,7 @@
         android:id="@+id/nota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese la Nota"/>
+        android:hint="Ingrese su nota"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boton1"
         android:layout_width="match_parent"
@@ -47,6 +49,12 @@
         android:textSize="26sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@drawable/background"/>
+        android:background="#3F51B5"/>
+    <TextView
+        android:id="@+id/informacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aqui se mostrara su informacion"
+        android:textColor="#fff"/>
 
 </LinearLayout>

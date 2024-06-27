@@ -30,13 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-<<<<<<< HEAD
+
     viewBinding {
         enable =true
-=======
-    viewBinding{
-        enabled true
->>>>>>> 3e3b76f604aeb9cd26bc496b8b5770fdc80b2ba6
     }
 }
 
