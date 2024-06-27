@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.boton1.setOnClickListener {recuperarDatos()
         }
+        binding.boton2.setOnClickListener { enviarDatos() }
     }
 
     private fun recuperarDatos() {
@@ -22,5 +23,8 @@ class MainActivity : AppCompatActivity() {
         val apellido=binding.apellido.text.toString()
         val nota = binding.nota.text.toString()
         binding.informacion.setText("$nombre,$apellido,$nota")
+    }
+    private fun enviarDatos(){
+
     }
 }

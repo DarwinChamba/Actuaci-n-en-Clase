@@ -56,5 +56,10 @@
         android:layout_height="wrap_content"
         android:hint="Aqui se mostrara su informacion"
         android:textColor="#fff"/>
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR DATOS"/>
 
 </LinearLayout>
