@@ -1,8 +1,12 @@
 package com.example.actuacionclase
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.actuacionclase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,8 +19,22 @@ class MainActivity : AppCompatActivity() {
 
         binding.boton1.setOnClickListener {recuperarDatos()
         }
-        binding.boton2.setOnClickListener { enviarDatos() }
+        binding.boton2.setOnClickListener {seleccionarImagen() }
+
+    } //llave de cierre del metodo onCreate
+
+    private fun seleccionarImagen () {
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        intent.type="image/*"
+        register.launch(intent)
     }
+    val register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+        if (it.resultCode== Activity.RESULT_OK){
+            val intent = it.data
+            binding.imagen1.setImageURI(intent?.data)
+        }
+    }
+
 
     private fun recuperarDatos() {
         val nombre=binding.nombre.text.toString()

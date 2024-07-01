@@ -41,6 +41,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su nota"/>
+
+    <ImageView
+        android:id="@+id/imagen1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boton1"
         android:layout_width="match_parent"
@@ -49,17 +58,22 @@
         android:textSize="26sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="#3F51B5"/>
+        android:background="@drawable/background"/>
     <TextView
         android:id="@+id/informacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Aqui se mostrara su informacion"
         android:textColor="#fff"/>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boton2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ENVIAR DATOS"/>
+        android:text="Seleccionar Foto"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/fondo2"/>
 
 </LinearLayout>
