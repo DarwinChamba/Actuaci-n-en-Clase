@@ -17,11 +17,16 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.boton1.setOnClickListener {recuperarDatos()
+        binding.boton1.setOnClickListener {irNuevaActividad()
         }
         binding.boton2.setOnClickListener {seleccionarImagen() }
 
     } //llave de cierre del metodo onCreate
+
+    private fun irNuevaActividad() {
+        val intent = Intent(this,MainActivity2::class.java)
+        startActivity(intent)
+    }
 
     private fun seleccionarImagen () {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
@@ -42,7 +47,5 @@ class MainActivity : AppCompatActivity() {
         val nota = binding.nota.text.toString()
         binding.informacion.setText("$nombre,$apellido,$nota")
     }
-    private fun enviarDatos(){
 
-    }
 }
