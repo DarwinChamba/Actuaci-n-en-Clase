@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".SeleccionarVideo"
     android:background="#03A9F4">
     <TextView
         android:id="@+id/nombre"
@@ -28,4 +28,8 @@
         android:hint="apellido"
         android:textSize="15dp"
         android:layout_marginTop="15dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

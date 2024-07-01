@@ -4,8 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.actuacionclase.databinding.ActivityMainBinding
 
@@ -24,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     } //llave de cierre del metodo onCreate
 
     private fun irNuevaActividad() {
-        val intent = Intent(this,MainActivity2::class.java)
+        val intent = Intent(this,SeleccionarVideo::class.java)
         startActivity(intent)
     }
 
