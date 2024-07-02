@@ -38,12 +38,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun recuperarDatos() {
         val nombre=binding.nombre.text.toString()
         val apellido=binding.apellido.text.toString()
         val nota = binding.nota.text.toString()
         binding.informacion.setText("$nombre,$apellido,$nota")
     }
+    private fun enviarDatos(){
 
+    }
 }
